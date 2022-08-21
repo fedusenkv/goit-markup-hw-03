@@ -385,6 +385,7 @@ color: var(--primary-bg-color);
         background: var(--primary-bg-color);
         border: 1px solid #EEEEEE;
         margin-right: 30px;
+        margin-bottom: 30px;
 }
 .portfolio-list:nth-child(3n) {
     margin-right: 0px;
