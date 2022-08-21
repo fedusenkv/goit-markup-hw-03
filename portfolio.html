@@ -15,28 +15,31 @@
         rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <a class="logo-link" href="./index.html">Web<span class="logo-header">Studio</span></a>
-            <ul>
-                <li><a class="nav-list" href="./index.html">Студія</a></li>
-                <li><a class="nav-list current" href="./portfolio.html">Портфоліо</a></li>
-                <li><a class="nav-list" href="">Контакти</a></li>
-            </ul>
-        </nav>
-        <ul>
-            <li>
-                <a class="contact-list" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-                <a class="contact-list" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-        </ul>
+    <header class="page-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a class="logo-link" href="./index.html">Web<span class="logo-header">Studio</span></a>
+                <ul class="site-nav">
+                    <li><a class="nav-list" href="./index.html">Студія</a></li>
+                    <li><a class="nav-list current" href="./portfolio.html">Портфоліо</a></li>
+                    <li><a class="nav-list" href="">Контакти</a></li>
+                </ul>
+    
+                <ul class="contacts">
+                    <li class="item">
+                        <a class="contact-list" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="item">
+                        <a class="contact-list" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+        </div>
     </header>
     <main>
+        <div class="container">
         <section>
-            <h1 class="section-title">Наші роботи</h1>
-            <ul>
+            <h1 class="portfolio-title vissualy-hidden">Наші роботи</h1>
+            <ul class="filters">
                 <li>
                     <button type="button" class="filter-button">Усі</button>
                 </li>
@@ -53,7 +56,8 @@
                     <button type="button" class="filter-button">Маркетинг</button>
                 </li>
             </ul>
-            <ul>
+            <ul class="portfolio-items">
+                <div class="flex-container">
                 <li class="portfolio-list"><img src="./images/imgportfolio1.jpg" alt="portfolio1" width="370">
                 <h2 class="portfolio-name">Технокряк</h2>
                 <p class="portfolio-text">Веб-сайт</p>
@@ -90,24 +94,28 @@
                     <h2 class="portfolio-name">Growing Business</h2>
                     <p class="portfolio-text">Додаток</p>
                 </li>
+                </div>
             </ul>
         </section>
+        </div>
     </main>
     <footer>
-        <a class="logo-link" href="./index.html">Web<span class="logo-footer">Studio</span></a>
-        <address>
-            <ul>
-                <li>
-                    <a class="address-link" href="">м. Київ, пр-т Лесі Українки, 26</a>
-                </li>
-                <li>
-                    <a class="footer-nav" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a class="footer-nav" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </address>
+        <div class="container">
+            <a class="logo-link" href="./index.html">Web<span class="logo-footer">Studio</span></a>
+            <address>
+                <ul class="footer-list">
+                    <li>
+                        <a class="address-link" href="">м. Київ, пр-т Лесі Українки, 26</a>
+                    </li>
+                    <li>
+                        <a class="footer-nav" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a class="footer-nav" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </footer>
     </body>
     
