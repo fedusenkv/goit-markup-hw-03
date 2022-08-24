@@ -12,8 +12,8 @@
 
 
 .page-header {
-    padding-bottom: 32px;
-    padding-top: 32px;
+    padding-bottom: 25px;
+    padding-top: 24px;
 
 }
 img {
@@ -34,10 +34,8 @@ height: auto;
 }
 .container {
 margin-left: auto;
-padding-left: 20px;
-padding-right: 20px;
 margin-right: auto;
-width: 1170px;
+width: 1200px;
 }
 nav {
 display: block;
@@ -86,6 +84,15 @@ display: block;
 
 
 /*Main*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
 
 
 body {
@@ -107,6 +114,9 @@ a {
 .hero-title {
     margin-top: 0;
     margin-bottom: 30;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -119,6 +129,8 @@ a {
 }
 
 .hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
 background-color: var(--footer-bg-color);
 }
 .hero-button {
@@ -137,6 +149,7 @@ background-color: var(--footer-bg-color);
             padding: 10px 32px;
             box-sizing: border-box;
             margin: auto;
+            margin-top: 30px;
 
 
 
@@ -163,7 +176,10 @@ background-color: var(--footer-bg-color);
     clip-path: inset(50%);
     margin: -1px;
 }
-
+.feature-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .feature-list {
     display: flex;
     flex-wrap: wrap;
@@ -178,11 +194,6 @@ background-color: var(--footer-bg-color);
 .feature-list .item:last-child {
 margin-right: 0px;    
 
-}
-
-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .section-list {
@@ -204,6 +215,8 @@ section {
         color: var(--secondaty-text-color)
 }
 .section-title {
+    padding-top: 0px;
+    padding-bottom: 50px;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.14;
@@ -214,15 +227,21 @@ section {
 
 .img-list {
     display: flex;
+    justify-content: center;
 
 }
-.img-list li {
+.img-list .img {
     margin-right: 30px;
 }
-.img-list li:last-child {
+.img-list .img:last-child {
     margin-right: 0px;
 }
+.team-dsc {
+padding-top: 30px;padding-bottom: 30px;
+
+}
 .teammate-name {
+    margin-bottom: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.188;
@@ -238,7 +257,9 @@ text-align: center;
 text-align: center;
     color: var(--secondaty-text-color);
 }
-.team {
+.team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
     background: var(--secondary-bg-color);
 }
 .team-list {
@@ -274,6 +295,25 @@ footer {
         letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+
+.logo-link-footer {
+    color: var(--accent-color);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.footer-nav-mail {
+    margin-bottom: 9px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
 .footer-list {
     margin-top: 20px;
 }
@@ -307,6 +347,15 @@ footer {
     color: var(--primary-bg-color);
 }
 
+.address-link-footer {
+    margin-bottom: 9px;
+    font-style: normal;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    color: var(--primary-bg-color);
+}
 .contact-list:hover,
 :focus {
     color: var(--accent-color);
@@ -368,7 +417,6 @@ color: var(--primary-bg-color);
         line-height: 1.88;
         letter-spacing: 0.03em;
         color: var(--secondaty-text-color);
-        margin-left: 24px;
 
 }
 .portfolio-name {
@@ -377,13 +425,27 @@ color: var(--primary-bg-color);
         line-height: 2;
         letter-spacing: 0.06em;
         color: var(--primary-text-color);
-        margin-left: 24px;
 }
+.portfolio-dsc {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+}
+.portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
 .portfolio-list {
     width: 370px;
     box-sizing: border-box;
         background: var(--primary-bg-color);
-        border: 1px solid #EEEEEE;
+        
         margin-right: 30px;
         margin-bottom: 30px;
 }
@@ -392,9 +454,10 @@ color: var(--primary-bg-color);
 
 }
 .portfolio-items {
+        display: flex;
+            flex-wrap: wrap;
 
 }
 .flex-container {
-    display: flex;
-    flex-wrap: wrap;
+
 }
