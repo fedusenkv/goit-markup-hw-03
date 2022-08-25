@@ -6,7 +6,6 @@
     --primary-bg-color: rgba(255, 255, 255, 1);
     --footer-bg-color: rgba(47, 48, 58, 1);
     --secondary-bg-color: rgba(245, 244, 250, 1);
-
 }
 /*Header*/
 
@@ -36,6 +35,7 @@ height: auto;
 margin-left: auto;
 margin-right: auto;
 width: 1200px;
+padding: 0 15px;
 }
 nav {
 display: block;
@@ -177,15 +177,15 @@ background-color: var(--footer-bg-color);
     margin: -1px;
 }
 .feature-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+margin-top: 94px;
+margin-bottom: 94px;
 }
 .feature-list {
     display: flex;
     flex-wrap: wrap;
     text-align: left;
     justify-content: center;
-    padding-bottom: 94px;
+    margin-bottom: 94px;
 }
 .feature-list .item {
     width: 270px;
@@ -215,8 +215,7 @@ margin-right: 0px;
         color: var(--secondaty-text-color)
 }
 .section-title {
-    padding-top: 0px;
-    padding-bottom: 50px;
+margin-bottom: 50px;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.14;
@@ -241,7 +240,7 @@ padding-top: 30px;padding-bottom: 30px;
 
 }
 .teammate-name {
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.188;
@@ -258,8 +257,9 @@ text-align: center;
     color: var(--secondaty-text-color);
 }
 .team-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+margin-top: 94px;
+padding-top: 94px;
+padding-bottom: 94px;
     background: var(--secondary-bg-color);
 }
 .team-list {
@@ -314,8 +314,16 @@ footer {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-.footer-list {
+address {
     margin-top: 20px;
+}
+
+.footer-list li {
+    margin-bottom: 9px;
+}
+
+.footer-list li:last-child {
+    margin-bottom: 0;
 }
 .logo-footer {
     color: var(--primary-bg-color);
@@ -420,6 +428,7 @@ color: var(--primary-bg-color);
 
 }
 .portfolio-name {
+    margin-bottom: 4px;
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
